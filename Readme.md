@@ -6,7 +6,7 @@ Docker helps to become OS-system agnostic
 
 ### Usage
 
-`docker run -v <my-dir-with-requirements.txt>:/pack packpack`
+`docker run -v <my-dir-with-requirements.txt>:/pack docker.locarta.co/pypack`
 
 The command will produce a file `packages.zip` in the directory your `<my-dir-with-requirements.txt>`
 
