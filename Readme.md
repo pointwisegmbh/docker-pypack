@@ -1,4 +1,4 @@
-### Packpack python container
+### Pypack python container
 
 Help you to wrap your requirements.txt as .zip file. 
 
