@@ -2,11 +2,11 @@
 
 if [ ! -f /pack/requirements.txt ]; then
 	echo "File /pack/requirements.txt not found, please make sure it exists, and you run your docker with -v <dir_with_requirements.txt>:/pack option"
-        echo "Container will exit with code 1, see ya!"
-        exit 1	
-fi 
+  echo "Container will exit with code 1, see ya!"
+  exit 1
+fi
 
-pip install -r /pack/requirements.txt --target ./packages
+pip install -r /pack/requirements.txt --extra-index-url http://pypi.locarta.co/simple --trusted-host pypi.locarta.co --target ./packages
 
 if [ -d packages ]; then
 	cd packages
