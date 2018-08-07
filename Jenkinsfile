@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git(url: 'https://github.com/pointwisegmbh/pw-android-sdk.git', branch: 'master')
+        git(url: 'git@github.com:pointwisegmbh/pw-android-sdk.git', branch: 'master')
         sh '''git submodule update --init --recursive
 
 ./gradlew clean testapp:assembleProd'''
