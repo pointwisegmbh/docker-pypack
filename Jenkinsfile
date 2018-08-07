@@ -10,7 +10,4 @@ pipeline {
       }
     }
   }
-  environment {
-    ANDROID_HOME = '/opt/sdk_linux'
-  }
 }
